@@ -12,6 +12,6 @@ public class AppTest {
 
     @Test
     void testeFalho() {
-        assertEquals(5, App.soma(2, 2)); // erro proposital
+        assertEquals(4, App.soma(2, 2)); // erro
     }
 }
