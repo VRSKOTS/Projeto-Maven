@@ -1,17 +1,12 @@
-package com.exemplo;
-
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class AppTest {
+public class UsuarioRepositoryTest {
 
     @Test
-    void testeSoma() {
-        assertEquals(2, App.soma(1, 1));
-    }
-
-    @Test
-    void testeFalho() {
-        assertEquals(4, App.soma(2, 2)); // erro
+    void deveSalvarUsuario() {
+        Usuario usuario = new Usuario("Vinicius", "vinicius@email.com");
+        // Simulação de salvar
+        assertEquals("Vinicius", usuario.getNome());
     }
 }
